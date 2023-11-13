@@ -1,29 +1,33 @@
+import junit.framework.Assert.assertTrue
+import junit.framework.TestCase.assertFalse
 import org.junit.Test
-import kotlin.test.assertEquals
 
 class TestProject {
 
     @Test(timeout = 500)
     fun testPrimoFalse() {
-        assertEquals(ePrimo(1), false)
-        assertEquals(ePrimo(4), false)
-        assertEquals(ePrimo(36), false)
-        assertEquals(ePrimo(52), false)
+        assertFalse("ePrimo(1) devia retornar false", ePrimo(1))
+        assertFalse("ePrimo(4) devia retornar false", ePrimo(4))
+        assertFalse("ePrimo(36) devia retornar false", ePrimo(36))
+        assertFalse(ePrimo(52))
+        assertTrue(ePrimo(7))
     }
     @Test(timeout = 500)
     fun testPrimoTrue() {
-        assertEquals(ePrimo(7),true)
-        assertEquals(ePrimo(2),true)
-        assertEquals(ePrimo(37),true)
-        assertEquals(ePrimo(137),true)
-        assertEquals(ePrimo(3),true)
+        assertTrue("ePrimo(7) devia retornar true", ePrimo(7))
+        assertTrue("ePrimo(2) devia retornar true", ePrimo(2))
+        assertTrue("ePrimo(37) devia retornar true", ePrimo(37))
+        assertTrue(ePrimo(137))
+        assertTrue(ePrimo(3))
+        assertFalse(ePrimo(4))
     }
     @Test(timeout = 500)
     fun testPrimoNegative() {
-        assertEquals(ePrimo(-2),false)
-        assertEquals(ePrimo(-10),false)
-        assertEquals(ePrimo(-64),false)
-        assertEquals(ePrimo(-137),false)
+        assertFalse("ePrimo(-2) devia retornar false", ePrimo(-2))
+        assertFalse(ePrimo(-10))
+        assertFalse(ePrimo(-64))
+        assertFalse(ePrimo(-137))
+        assertTrue(ePrimo(3))
     }
 
 }
