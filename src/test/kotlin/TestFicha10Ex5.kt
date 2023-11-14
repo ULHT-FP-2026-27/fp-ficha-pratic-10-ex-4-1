@@ -10,6 +10,7 @@ class TestProject {
         assertFalse("ePrimo(4) devia retornar false", ePrimo(4))
         assertFalse("ePrimo(36) devia retornar false", ePrimo(36))
         assertFalse(ePrimo(52))
+        assertFalse(ePrimo(49))
         assertTrue(ePrimo(7))
     }
     @Test(timeout = 500)
