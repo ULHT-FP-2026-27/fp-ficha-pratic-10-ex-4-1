@@ -18,7 +18,7 @@ class TestProject {
     }
 
     @Test
-    @Order(1)
+    @Order(2)
     fun testPrimoTrue() {
         assertTrue(ePrimo(7), "ePrimo(7) devia retornar true")
         assertTrue(ePrimo(2), "ePrimo(2) devia retornar true")
@@ -29,7 +29,7 @@ class TestProject {
     }
 
     @Test
-    @Order(1)
+    @Order(3)
     fun testPrimoNegative() {
         assertFalse(ePrimo(-2), "ePrimo(-2) devia retornar false")
         assertFalse(ePrimo(-10))
