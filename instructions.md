@@ -1,6 +1,6 @@
 # Ficha prática 10
 
-Desenvolva um programa para verificar se um número é primo, conforme descrito no exercício 5.1 da ficha 10.</p>
+Desenvolva um programa para verificar se um número é primo, conforme descrito no exercício 4.1 da ficha 10.</p>
 
 ## Instruções
 
